@@ -4,7 +4,7 @@ const apps = [
     eyebrow: "Shopping, simplified",
     description:
       "Create grocery lists fast with smart item suggestions, drag-to-reorder sorting, easy checkoffs, sharing, and backup—all without an account.",
-    image: "/images/simplest-shopping-list.png",
+    image: "images/simplest-shopping-list.png",
     url: "https://play.google.com/store/apps/details?id=com.gadgetjudge.simplestshoppinglist&hl=en_US",
     accent: "green",
   },
@@ -13,7 +13,7 @@ const apps = [
     eyebrow: "Remember, effortlessly",
     description:
       "Set one-time or flexible recurring reminders in seconds, then search, snooze, edit, or dismiss them from a clean, focused interface.",
-    image: "/images/simplest-reminder.png",
+    image: "images/simplest-reminder.png",
     url: "https://play.google.com/store/apps/details?id=com.gadgetjudge.simplestreminder&hl=en_US",
     accent: "blue",
   },
@@ -22,13 +22,13 @@ const apps = [
     eyebrow: "Tap. Pulse. Fly.",
     description:
       "A fast one-touch arcade game where carefully placed energy pulses steer your pilot through moving gates, power-ups, and perfect-chain challenges.",
-    image: "/images/pulse-pilot.png",
+    image: "images/pulse-pilot.png",
     url: "https://play.google.com/store/apps/details?id=com.gadgetjudge.pulsepilot&hl=en_US",
     accent: "purple",
   },
 ] as const;
 
-export default function Home() {
+export default function App() {
   return (
     <main>
       <nav className="nav" aria-label="Main navigation">
@@ -52,16 +52,8 @@ export default function Home() {
       </section>
 
       <section className="apps-section" id="apps" aria-labelledby="apps-title">
-        <header className="section-heading">
-          <div>
-            <p className="section-number">01 — The collection</p>
-            <h2 id="apps-title">Available now</h2>
-          </div>
-          <p>Three apps, each built around one clear idea and a little curiosity.</p>
-        </header>
-
         <div className="app-list">
-          {apps.map((app, index) => (
+          {apps.map((app) => (
             <article className={`app-card ${app.accent}`} key={app.name}>
               <a
                 className="image-link"
@@ -74,7 +66,6 @@ export default function Home() {
                 <span className="open-icon" aria-hidden="true">↗</span>
               </a>
               <div className="app-details">
-                <span className="app-number">0{index + 1}</span>
                 <div className="app-copy">
                   <p className="app-eyebrow">{app.eyebrow}</p>
                   <h3>{app.name}</h3>
