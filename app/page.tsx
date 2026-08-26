@@ -17,6 +17,15 @@ const apps = [
     url: "https://play.google.com/store/apps/details?id=com.gadgetjudge.simplestreminder&hl=en_US",
     accent: "blue",
   },
+  {
+    name: "Pulse Pilot",
+    eyebrow: "Tap. Pulse. Fly.",
+    description:
+      "A fast one-touch arcade game where carefully placed energy pulses steer your pilot through moving gates, power-ups, and perfect-chain challenges.",
+    image: "/images/pulse-pilot.png",
+    url: "https://play.google.com/store/apps/details?id=com.gadgetjudge.pulsepilot&hl=en_US",
+    accent: "purple",
+  },
 ] as const;
 
 export default function Home() {
@@ -48,7 +57,7 @@ export default function Home() {
             <p className="section-number">01 — The collection</p>
             <h2 id="apps-title">Available now</h2>
           </div>
-          <p>Two apps today. Another one is already on the way.</p>
+          <p>Three apps, each built around one clear idea and a little curiosity.</p>
         </header>
 
         <div className="app-list">
