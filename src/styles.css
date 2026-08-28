@@ -194,8 +194,13 @@ a:focus-visible {
   border-radius: 50%;
   background: var(--ink);
   color: white;
-  font-size: 22px;
   transition: background 180ms ease, transform 180ms ease;
+}
+
+.open-icon svg {
+  display: block;
+  width: 24px;
+  height: 24px;
 }
 
 .image-link:hover .open-icon {
@@ -231,12 +236,20 @@ a:focus-visible {
 
 .app-copy>a {
   display: inline-flex;
+  align-items: center;
   gap: 10px;
   margin-top: 24px;
   padding-bottom: 5px;
   border-bottom: 1px solid currentColor;
   font-weight: 700;
   text-decoration: none;
+}
+
+.inline-icon {
+  display: block;
+  width: 1.05em;
+  height: 1.05em;
+  flex: none;
 }
 
 .app-copy>a:hover {
@@ -312,6 +325,11 @@ footer p {
     height: 44px;
     right: 10px;
     bottom: 10px;
+  }
+
+  .open-icon svg {
+    width: 21px;
+    height: 21px;
   }
 
   footer {

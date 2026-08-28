@@ -28,6 +28,24 @@ const apps = [
   },
 ] as const;
 
+function ExternalLinkIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M7 17 17 7" />
+      <path d="M9 7h8v8" />
+    </svg>
+  );
+}
+
 export default function App() {
   return (
     <main>
@@ -64,7 +82,9 @@ export default function App() {
                 aria-label={`View ${app.name} on Google Play`}
               >
                 <img src={app.image} alt={`${app.name} feature graphic`} />
-                <span className="open-icon" aria-hidden="true">↗</span>
+                <span className="open-icon" aria-hidden="true">
+                  <ExternalLinkIcon />
+                </span>
               </a>
               <div className="app-details">
                 <div className="app-copy">
@@ -72,7 +92,7 @@ export default function App() {
                   <h3>{app.name}</h3>
                   <p>{app.description}</p>
                   <a href={app.url} target="_blank" rel="noreferrer">
-                    Get it on Google Play <span aria-hidden="true">↗</span>
+                    Get it on Google Play <ExternalLinkIcon className="inline-icon" />
                   </a>
                 </div>
               </div>
