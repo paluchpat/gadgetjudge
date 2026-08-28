@@ -43,8 +43,9 @@ export default function App() {
         <p className="kicker">Small apps. Thoughtfully made.</p>
         <h1>Useful things,<br />without the clutter.</h1>
         <p className="hero-copy">
-          GadgetJudge is my collection of simple Android apps—made as a hobby,
-          polished with care, and designed to do one job well.
+          GadgetJudge is my collection of thoughtfully crafted Android apps—made
+          as a hobby, polished with care, and designed to do one job exceptionally
+          well.
         </p>
         <a className="hero-link" href="#apps">
           Explore the apps <span aria-hidden="true">↓</span>
