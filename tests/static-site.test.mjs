@@ -5,17 +5,22 @@ import test from "node:test";
 test("builds a GitHub Pages-ready static site", async () => {
   const html = await readFile(new URL("../dist/index.html", import.meta.url), "utf8");
   assert.match(html, /<title>GadgetJudge — Small apps, thoughtfully made<\/title>/);
-  assert.match(html, /https:\/\/gadgetjudge\.com\/og\.png/);
+  assert.match(html, /https:\/\/gadgetjudge\.com\/gadgetjudge-social-card\.png/);
+  assert.match(html, /<meta property="og:image:type" content="image\/png" \/>/);
+  assert.match(html, /<meta property="og:image:width" content="1200" \/>/);
+  assert.match(html, /<meta property="og:image:height" content="630" \/>/);
   assert.doesNotMatch(html, /codex-preview|chatgpt\.site/i);
 });
 
 test("includes the custom domain and public files", async () => {
-  const [cname, ads, sourceAds] = await Promise.all([
+  const [cname, ads, sourceAds, socialCard] = await Promise.all([
     readFile(new URL("../dist/CNAME", import.meta.url), "utf8"),
     readFile(new URL("../dist/app-ads.txt", import.meta.url), "utf8"),
     readFile(new URL("../app-ads.txt", import.meta.url), "utf8"),
+    readFile(new URL("../dist/gadgetjudge-social-card.png", import.meta.url)),
   ]);
 
   assert.equal(cname.trim(), "gadgetjudge.com");
   assert.equal(ads, sourceAds);
+  assert.ok(socialCard.length > 0);
 });
