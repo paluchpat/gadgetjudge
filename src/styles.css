@@ -52,15 +52,14 @@ a:focus-visible {
 }
 
 .brand-mark {
-  display: grid;
+  display: block;
   width: 34px;
   height: 34px;
-  place-items: center;
+  flex: none;
   border-radius: 50%;
-  background: var(--ink);
-  color: var(--paper);
-  font-size: 11px;
-  letter-spacing: 0.04em;
+  padding: 4px;
+  background: #001944;
+  object-fit: contain;
 }
 
 .nav-link {

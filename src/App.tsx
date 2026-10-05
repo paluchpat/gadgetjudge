@@ -51,7 +51,7 @@ export default function App() {
     <main>
       <nav className="nav" aria-label="Main navigation">
         <a className="brand" href="#top" aria-label="GadgetJudge home">
-          <span className="brand-mark" aria-hidden="true">GJ</span>
+          <img className="brand-mark" src="favicon.svg" alt="" width="34" height="34" />
           <span>GadgetJudge</span>
         </a>
         <a className="nav-link" href="#apps">Apps</a>
@@ -103,7 +103,7 @@ export default function App() {
 
       <footer>
         <a className="brand footer-brand" href="#top">
-          <span className="brand-mark" aria-hidden="true">GJ</span>
+          <img className="brand-mark" src="favicon.svg" alt="" width="34" height="34" />
           <span>GadgetJudge</span>
         </a>
         <p>Independent Android apps, made with curiosity.</p>
