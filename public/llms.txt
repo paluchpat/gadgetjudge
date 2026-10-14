@@ -1,0 +1,18 @@
+# GadgetJudge
+
+> GadgetJudge is an independent developer's portfolio of thoughtfully crafted Android apps. The apps are designed to be easy to use and focused on specific everyday tasks.
+
+The website introduces the apps and links to their official Google Play listings. Consult those listings for current availability, features, and purchase information.
+
+## Website
+
+- [GadgetJudge](https://gadgetjudge.com/): The official app portfolio.
+
+## Everyday apps
+
+- [Simplest Shopping List](https://play.google.com/store/apps/details?id=com.gadgetjudge.simplestshoppinglist): A grocery list app with quantities, notes, frequently purchased items, list sharing, and backup and restore. No account is required. List sharing sends a copy of the items; it is not live shared-list synchronization.
+- [Simplest Reminder](https://play.google.com/store/apps/details?id=com.gadgetjudge.simplestreminder): An Android reminder app with one-time and recurring schedules, snoozing, reminder search, and backup and restore.
+
+## Optional
+
+- [Pulse Pilot](https://play.google.com/store/apps/details?id=com.gadgetjudge.pulsepilot): GadgetJudge's arcade game.
