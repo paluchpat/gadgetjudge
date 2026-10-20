@@ -16,7 +16,7 @@ npm run dev
 npm test
 ```
 
-The production site is written to `dist/`. The build is fully static and can be hosted by GitHub Pages.
+The production site is written to `dist/`. The support page is a separate static HTML entry at `support/index.html`, built to `dist/support/index.html`, so it can be opened directly on GitHub Pages and read without JavaScript. The build is fully static and can be hosted by GitHub Pages.
 
 ## GitHub Pages
 
@@ -26,7 +26,7 @@ To add another app, add its feature image to `public/images` and add one entry t
 
 ## Search discovery and guides
 
-The files `public/robots.txt`, `public/sitemap.xml`, and `public/llms.txt` are copied to the site root during the build. The sitemap currently lists only the homepage. Add canonical page URLs as pages are published; do not list drafts, fragment links, or external Google Play URLs. Keep `llms.txt` synchronized with the public site.
+The files `public/robots.txt`, `public/sitemap.xml`, and `public/llms.txt` are copied to the site root during the build. The sitemap lists the homepage and the app support page at `/support/`. Add canonical page URLs as pages are published; do not list drafts, fragment links, or external Google Play URLs. Keep `llms.txt` synchronized with the public site.
 
 After deployment, submit `https://gadgetjudge.com/sitemap.xml` in Google Search Console and Bing Webmaster Tools. Deployment alone does not submit it. `llms.txt` is an optional guide for supporting AI tools, not a requirement for crawling or a Google ranking factor.
 

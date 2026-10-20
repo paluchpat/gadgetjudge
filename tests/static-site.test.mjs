@@ -24,3 +24,22 @@ test("includes the custom domain and public files", async () => {
   assert.equal(ads, sourceAds);
   assert.ok(socialCard.length > 0);
 });
+
+
+test("ships a directly accessible support page with working local assets", async () => {
+  const html = await readFile(new URL("../dist/support/index.html", import.meta.url), "utf8");
+  assert.match(html, /<title>App Support — GadgetJudge<\/title>/);
+  assert.match(html, /rel="canonical" href="https:\/\/gadgetjudge\.com\/support\/"/);
+  assert.match(html, /<h1>App Support<\/h1>/);
+  assert.match(html, /href="mailto:gadgetjudge@gmail\.com"/);
+  assert.match(html, /Restore Remove Ads on iPhone or iPad/);
+  assert.match(html, /Restore Purchases/);
+  assert.match(html, /same Apple Account that made the purchase/);
+  assert.match(html, /href="\/#apps"/);
+  assert.match(html, /src="\.\.\/favicon\.svg"/);
+  await readFile(new URL("../dist/favicon.svg", import.meta.url));
+  const stylesheet = html.match(/rel="stylesheet"[^>]*href="(\.\.\/assets\/[^"]+\.css)"/);
+  assert.ok(stylesheet, "support page includes its compiled stylesheet");
+  await readFile(new URL(`../dist/support/${stylesheet[1]}`, import.meta.url));
+  assert.doesNotMatch(html, /\/src\//);
+});

@@ -54,7 +54,10 @@ export default function App() {
           <img className="brand-mark" src="favicon.svg" alt="" width="34" height="34" />
           <span>GadgetJudge</span>
         </a>
-        <a className="nav-link" href="#apps">Apps</a>
+        <div className="nav-links">
+          <a className="nav-link" href="#apps">Apps</a>
+          <a className="nav-link" href="/support/">Support</a>
+        </div>
       </nav>
 
       <section className="hero" id="top">
@@ -106,7 +109,10 @@ export default function App() {
           <img className="brand-mark" src="favicon.svg" alt="" width="34" height="34" />
           <span>GadgetJudge</span>
         </a>
-        <p>Independent Android apps, made with curiosity.</p>
+        <div className="footer-info">
+          <p>Independent Android apps, made with curiosity.</p>
+          <a href="/support/">Support</a>
+        </div>
         <p>© {new Date().getFullYear()} GadgetJudge</p>
       </footer>
     </main>
