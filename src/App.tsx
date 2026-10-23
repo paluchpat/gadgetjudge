@@ -95,15 +95,15 @@ export default function App() {
               <div className="app-details">
                 <div className="app-copy">
                   <p className="app-eyebrow">{app.eyebrow}</p>
-                  <h3>{app.name}</h3>
+                  <h3><a className="app-title-link" href={app.detailsUrl}>{app.name}</a></h3>
                   <p>
                     {app.description}{" "}
                     <a
                       className="app-read-more"
                       href={app.detailsUrl}
-                      aria-label={`Read more about ${app.name}`}
+                      aria-label={`Learn more about ${app.name}`}
                     >
-                      read more...
+                      Learn more...
                     </a>
                   </p>
                   <a href={app.url} target="_blank" rel="noreferrer">

@@ -225,6 +225,16 @@ a:focus-visible {
   letter-spacing: -0.05em;
 }
 
+.app-title-link {
+  text-decoration: none;
+}
+
+.app-title-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 2px;
+}
+
 .app-copy>p:not(.app-eyebrow) {
   max-width: 640px;
   margin: 0;
@@ -235,7 +245,8 @@ a:focus-visible {
 
 .app-copy .app-read-more {
   color: #f8f6ef;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 700;
   text-underline-offset: 3px;
   white-space: nowrap;
 }
