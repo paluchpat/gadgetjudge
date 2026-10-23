@@ -5,6 +5,7 @@ const apps = [
     description:
       "Create grocery lists fast with smart item suggestions, drag-to-reorder sorting, easy checkoffs, sharing, and backup—all without an account.",
     image: "images/simplest-shopping-list.png",
+    detailsUrl: "/simplest-shopping-list/",
     url: "https://play.google.com/store/apps/details?id=com.gadgetjudge.simplestshoppinglist&hl=en_US",
     accent: "green",
   },
@@ -14,6 +15,7 @@ const apps = [
     description:
       "Set one-time or flexible recurring reminders in seconds, then search, snooze, edit, or dismiss them from a clean, focused interface.",
     image: "images/simplest-reminder.png",
+    detailsUrl: "/simplest-reminder/",
     url: "https://play.google.com/store/apps/details?id=com.gadgetjudge.simplestreminder&hl=en_US",
     accent: "blue",
   },
@@ -23,6 +25,7 @@ const apps = [
     description:
       "A fast one-touch arcade game where carefully placed energy pulses steer your pilot through moving gates, power-ups, and perfect-chain challenges.",
     image: "images/pulse-pilot.png",
+    detailsUrl: "/pulse-pilot/",
     url: "https://play.google.com/store/apps/details?id=com.gadgetjudge.pulsepilot&hl=en_US",
     accent: "purple",
   },
@@ -93,7 +96,16 @@ export default function App() {
                 <div className="app-copy">
                   <p className="app-eyebrow">{app.eyebrow}</p>
                   <h3>{app.name}</h3>
-                  <p>{app.description}</p>
+                  <p>
+                    {app.description}{" "}
+                    <a
+                      className="app-read-more"
+                      href={app.detailsUrl}
+                      aria-label={`Read more about ${app.name}`}
+                    >
+                      read more...
+                    </a>
+                  </p>
                   <a href={app.url} target="_blank" rel="noreferrer">
                     Get it on Google Play <ExternalLinkIcon className="inline-icon" />
                   </a>

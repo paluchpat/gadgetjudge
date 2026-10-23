@@ -233,6 +233,17 @@ a:focus-visible {
   line-height: 1.6;
 }
 
+.app-copy .app-read-more {
+  color: #f8f6ef;
+  font-weight: 600;
+  text-underline-offset: 3px;
+  white-space: nowrap;
+}
+
+.app-copy .app-read-more:hover {
+  color: var(--accent);
+}
+
 .app-copy>a {
   display: inline-flex;
   align-items: center;
