@@ -1,19 +1,22 @@
 # GadgetJudge
 
-> GadgetJudge is an independent developer's portfolio of thoughtfully crafted Android apps. The apps are designed to be easy to use and focused on specific everyday tasks.
+> GadgetJudge is an independent developer's portfolio of thoughtfully crafted Android apps and games. The apps are designed to be easy to use and focused on what you need to do.
 
-The website introduces the apps and links to their official Google Play listings. Consult those listings for current availability, features, and purchase information.
+The app pages below explain each app and show screenshots. Use the official Google Play listings to check current availability, device compatibility, and purchase information.
 
 ## Website
 
 - [GadgetJudge](https://gadgetjudge.com/): The official app portfolio.
 - [App Support](https://gadgetjudge.com/support/): Contact the developer for help, bug reports, and suggestions; restore Remove Ads in Simplest Shopping List on iPhone or iPad.
 
-## Everyday apps
+## Apps
 
-- [Simplest Shopping List](https://play.google.com/store/apps/details?id=com.gadgetjudge.simplestshoppinglist): A grocery list app with quantities, notes, frequently purchased items, list sharing, and backup and restore. No account is required. List sharing sends a copy of the items; it is not live shared-list synchronization.
-- [Simplest Reminder](https://play.google.com/store/apps/details?id=com.gadgetjudge.simplestreminder): An Android reminder app with one-time and recurring schedules, snoozing, reminder search, and backup and restore.
+- [Simplest Shopping List](https://gadgetjudge.com/simplest-shopping-list/): A grocery list app with quantities, notes, frequently bought items, light and dark themes, list sharing, and backup and restore. No account is required. Sharing sends a copy of the items; it is not live shared-list synchronization.
+- [Simplest Reminder](https://gadgetjudge.com/simplest-reminder/): An Android reminder app with one-time and recurring schedules, quick and custom snoozing, reminder search, light and dark themes, and backup and restore. Reminder delivery depends on the relevant Android permissions and device settings.
+- [Pulse Pilot](https://gadgetjudge.com/pulse-pilot/): A one-touch Android arcade game. Place energy pulses to steer the pilot through moving gates, collect power-ups, and build a perfect chain.
 
-## Optional
+## Downloads
 
-- [Pulse Pilot](https://play.google.com/store/apps/details?id=com.gadgetjudge.pulsepilot): GadgetJudge's arcade game.
+- [Simplest Shopping List on Google Play](https://play.google.com/store/apps/details?id=com.gadgetjudge.simplestshoppinglist): Official Android download and store listing.
+- [Simplest Reminder on Google Play](https://play.google.com/store/apps/details?id=com.gadgetjudge.simplestreminder): Official Android download and store listing.
+- [Pulse Pilot on Google Play](https://play.google.com/store/apps/details?id=com.gadgetjudge.pulsepilot): Official Android download and store listing.
