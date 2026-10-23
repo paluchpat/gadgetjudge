@@ -36,10 +36,23 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
+      # upload-pages-artifact excludes dot directories, including Apple's .well-known endpoint.
+      - name: Archive static site including association files
+        run: |
+          tar --dereference --hard-dereference --directory dist --exclude=.git --exclude=.github -cf "$RUNNER_TEMP/artifact.tar" .
+          python3 - <<'PYTHON'
+          import os, tarfile
+          with tarfile.open(os.path.join(os.environ["RUNNER_TEMP"], "artifact.tar")) as artifact:
+              assert "./.well-known/apple-app-site-association" in artifact.getnames()
+          PYTHON
+
       - name: Upload static site
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2, same as upload-pages-artifact v4
         with:
-          path: dist
+          name: github-pages
+          path: ${{ runner.temp }}/artifact.tar
+          retention-days: 1
+          if-no-files-found: error
 
   deploy:
     environment:

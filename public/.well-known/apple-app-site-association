@@ -1,0 +1,19 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "G3C67458RQ.com.gadgetjudge.simplestshoppinglist"
+        ],
+        "components": [
+          {
+            "/": "/simplest-shopping-list/lists/"
+          },
+          {
+            "/": "/simplest-shopping-list/lists"
+          }
+        ]
+      }
+    ]
+  }
+}

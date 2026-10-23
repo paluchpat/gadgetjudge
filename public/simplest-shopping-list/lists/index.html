@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'; connect-src 'none'">
+  <title>Shared shopping list · Simplest Shopping List</title>
+  <link rel="stylesheet" href="/simplest-shopping-list/lists/style.css">
+  <script type="module" src="/simplest-shopping-list/lists/page.js"></script>
+</head>
+<body>
+  <main>
+    <section aria-labelledby="title">
+      <img class="app-icon" src="/simplest-shopping-list/lists/app-icon.webp" alt="" width="72" height="72">
+      <p class="app-name">Simplest Shopping List</p>
+      <h1 id="title">Join a shopping list</h1>
+      <p id="message" role="status" aria-live="polite">Open this invitation in the app.</p>
+      <a id="open-app" class="button primary" hidden>Open app <span aria-hidden="true">↗</span></a>
+      <noscript><p>Open the original link from your message, or enable JavaScript.</p></noscript>
+      <div class="install">
+        <div class="stores" id="stores">
+          <a id="apple-store" class="button secondary" href="https://apps.apple.com/app/id6824321607" rel="noreferrer">Get the iPhone app</a>
+          <a id="google-store" class="button secondary" href="https://play.google.com/store/apps/details?id=com.gadgetjudge.simplestshoppinglist" rel="noreferrer">Get the Android app</a>
+        </div>
+        <p class="hint">After installing, open this link again.</p>
+      </div>
+      <details id="open-help" hidden><summary>App not opening?</summary><p>Return to your message. Press and hold the invitation, then choose Open in Simplest Shopping List if it appears.</p></details>
+    </section>
+    <footer><a href="https://gadgetjudge.com/" rel="noreferrer">GadgetJudge</a></footer>
+  </main>
+</body>
+</html>
