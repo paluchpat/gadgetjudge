@@ -44,6 +44,7 @@ jobs:
           import os, tarfile
           with tarfile.open(os.path.join(os.environ["RUNNER_TEMP"], "artifact.tar")) as artifact:
               assert "./.well-known/apple-app-site-association" in artifact.getnames()
+              assert "./.well-known/assetlinks.json" in artifact.getnames()
           PYTHON
 
       - name: Upload static site

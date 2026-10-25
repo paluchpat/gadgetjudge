@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.gadgetjudge.simplestshoppinglist.stage",
+      "sha256_cert_fingerprints": [
+        "19:82:0C:5D:81:55:95:5D:70:05:5B:BB:DF:0E:4A:75:1C:65:B0:D9:54:F4:DB:AB:C7:A1:34:3C:80:F9:9F:45"
+      ]
+    }
+  }
+]
